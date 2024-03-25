@@ -1,0 +1,10 @@
+citHeader("To cite `DataTidy23RodoHonsMult` in publications use:")
+
+bibentry(bibtype = "Misc",
+         key = "rodo",
+         title = "DataTidy23RodoHonsMult: Tidy data for demonstration and assessment for UCT statistics honours multivariate course",
+         author = person(given = "Miguel",
+                         family = "Rodo"),
+         url = "https://github.com/MiguelRodo/DataTidy23RodoHonsMult/#readme",
+         abstract = "Tidy data for demonstration and assessment for UCT statistics honours multivariate course",
+         version = "0.0.0-1")
