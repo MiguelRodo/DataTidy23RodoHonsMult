@@ -1,0 +1,15 @@
+Package: DataTidy23RodoHonsMult
+Title: Tidy data for demonstration and assessment for UCT statistics
+    honours multivariate course
+Version: 0.0.0-1
+Authors@R: 
+    person("Miguel", "Rodo", , "miguel.rodo@uct.ac.za", role = c("aut", "cre"))
+Maintainer: Miguel Rodo <miguel.rodo@uct.ac.za>
+Description: Tidy data for demonstration and assessment for UCT statistics
+    honours multivariate course
+License: {{ License }}
+URL: https://github.com/MiguelRodo/DataTidy23RodoHonsMult/#readme
+BugReports: https://github.com/MiguelRodo/DataTidy23RodoHonsMult/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1

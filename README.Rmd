@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# {{ Package }}
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of {{ Package }} is to ...
+
+## Installation
+
+You can install the development version of {{ Package }} like so:
+
+``` r
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+The purpose of DataTidy23RodoHonsMult is to create tidy data for demonstration and assessment in UCT statistics honours multivariate module.
+
