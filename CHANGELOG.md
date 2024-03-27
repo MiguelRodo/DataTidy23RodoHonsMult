@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.3.0): Miguel Julio Rodo (11:07:47)
+  - Correct raw turtle data
+
 - *Minor* (v0.2.0): Miguel Julio Rodo (10:44:33)
   - Archive
 
