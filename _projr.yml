@@ -8,12 +8,11 @@ directories:
   docs:
     path: docs
 build:
-  git: yes
   github:
-    input:
-      content: data-raw
-    output:
+    latest-2024:
       content:
-      - output
+      - data-raw
       - docs
+      - output
+      structure: latest
 

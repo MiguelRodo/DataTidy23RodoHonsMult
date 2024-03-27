@@ -1,0 +1,10 @@
+build:
+  github:
+    archive-2024:
+      content:
+      - data-raw
+      - docs
+      - output
+      send:
+        sync-approach: sync-using-deletion
+        version-source: none

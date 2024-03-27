@@ -1,0 +1,54 @@
+---
+title: Principal component analysis
+subtitle: Modern multivariate statistical techniques
+author: Miguel Rodo
+date: "2024-02-12"
+bibliography: zotero.bib
+format:
+  html:
+    embed-resources: true
+    urlcolor: cyan
+    linkcolor: blue
+    filecolor: magenta
+---
+
+# Tidy data for demonstration and assessment
+
+## All Vula files
+
+```{r}
+library(tibble)
+library(readr)
+library(readxl)
+
+for (x in list.files("R", full.names = TRUE)) {
+  source(x)
+}
+# List of files
+files_to_read <- c(
+  "Air Pollution Data.csv", "J_WEx6.11.RData", "NationalTrack.csv",
+  "T1-3.txt", "T4-1.DAT", "T4-5.DAT", "T5-1.DAT", "T6_16_DENTAL.DAT",
+  "T6-4.dat", "T7-6.DAT", "J_WEx5.9.Rdata", "Lizard.csv", "T1-2.txt",
+  "T1-4.txt", "T4-3.DAT", "T5-12.dat", "T6-11.dat", "T6-17.dat",
+  "T7-1.DAT", "T7-7.dat"
+)
+
+# Read all files into a list of tibbles
+list_of_tibbles <- lapply(files_to_read, read_file) |>
+  setNames(files_to_read)
+
+tibble_vec_null_ind <- sapply(list_of_tibbles, is.null) |> which()
+files_to_read[tibble_vec_null_ind]
+```
+
+## Turtle
+
+```{r}
+data_raw_turtle <- readr::read_csv(
+  projr::projr_path_get("data-raw", "turtle.csv")
+)
+data_tidy_turtle <- data_raw_turtle |>
+  janitor::clean_names() |>
+  dplyr::mutate(dplyr::across(where(is.character), tolower))
+projr::projr_use_data(data_tidy_turtle)
+```
