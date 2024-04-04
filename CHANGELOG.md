@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.4.0): Miguel Julio Rodo (09:58:44)
+  - Add mali farm data
+
 - *Minor* (v0.3.0): Miguel Julio Rodo (11:07:47)
   - Correct raw turtle data
 
