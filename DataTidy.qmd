@@ -50,5 +50,16 @@ data_raw_turtle <- readr::read_csv(
 data_tidy_turtle <- data_raw_turtle |>
   janitor::clean_names() |>
   dplyr::mutate(dplyr::across(where(is.character), tolower))
-projr::projr_use_data(data_tidy_turtle)
+projr::projr_use_data(data_tidy_turtle, overwrite = TRUE)
+```
+
+## Mali family farm data
+
+```{r}
+data_raw_mali <- readr::read_csv(
+  projr::projr_path_get("data-raw", "MaliFamilyFarmData.csv")
+)
+data_tidy_mali <- data_raw_mali |>
+  janitor::clean_names()
+projr::projr_use_data(data_tidy_mali, overwrite = TRUE)
 ```
