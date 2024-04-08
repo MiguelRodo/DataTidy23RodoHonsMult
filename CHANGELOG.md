@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.6.0): Miguel Julio Rodo (15:01:06)
+  - Add paper data
+
 - *Minor* (v0.5.0): Miguel Julio Rodo (13:59:36)
   - Add house price data
 

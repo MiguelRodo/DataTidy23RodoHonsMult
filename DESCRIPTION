@@ -1,6 +1,6 @@
 Package: DataTidy23RodoHonsMult
 Title: Tidy data for demonstration and assessment for UCT statistics honours multivariate course
-Version: 0.5.0-1
+Version: 0.6.0
 Authors@R: person("Miguel", "Rodo", , "miguel.rodo@uct.ac.za", role = c("aut", "cre"))
 Maintainer: Miguel Rodo <miguel.rodo@uct.ac.za>
 Description: Tidy data for demonstration and assessment for UCT statistics honours multivariate course
