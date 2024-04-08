@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.5.0): Miguel Julio Rodo (13:59:36)
+  - Add house price data
+
 - *Minor* (v0.4.0): Miguel Julio Rodo (09:58:44)
   - Add mali farm data
 
