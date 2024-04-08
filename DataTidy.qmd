@@ -48,6 +48,13 @@ data_tidy_house_price <- list_of_tibbles[["T7-1.DAT"]]
 projr::projr_use_data(data_tidy_house_price, overwrite = TRUE)
 ```
 
+## Paper
+
+```{r}
+data_tidy_paper <- list_of_tibbles[["T7-7.dat"]]
+projr::projr_use_data(data_tidy_paper, overwrite = TRUE)
+```
+
 ## Turtle
 
 ```{r}

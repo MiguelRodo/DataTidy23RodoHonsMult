@@ -4,6 +4,7 @@ read_file <- function(filename) {
     "J_WEx6.11.RData" = read_jw_6_11(),
     "J_WEx5.9.Rdata" = read_jw_5_9(),
     "T7-1.DAT" = read_jw_7_1(),
+    "T7-7.dat" = read_jw_7_7(),
     .read_file_ext(filename)
   )
 }
@@ -54,6 +55,19 @@ read_jw_7_1 <- function() {
   data_tidy_jw_7_1 <- data_raw_jw_7_1
   colnames(data_tidy_jw_7_1) <- c("size", "assessed_value", "selling_price")
   data_tidy_jw_7_1 |>
+    janitor::clean_names() |>
+    tibble::as_tibble()
+}
+
+read_jw_7_7 <- function() {
+  data_raw_jw_7_7 <- projr::projr_path_get("data-raw", "T7-7.dat") |>
+    read.table()
+  data_tidy_jw_7_7 <- data_raw_jw_7_7
+  colnames(data_tidy_jw_7_7) <- c(
+    paste0("paper_", 1:4), paste0("pulp_", 1:4)
+  )
+  data_tidy_jw_7_7 <- data_tidy_jw_7_7[, c(5:8, 1:4)]
+  data_tidy_jw_7_7 |>
     janitor::clean_names() |>
     tibble::as_tibble()
 }
