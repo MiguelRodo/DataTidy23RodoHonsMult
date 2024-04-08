@@ -3,6 +3,7 @@ read_file <- function(filename) {
   switch(filename,
     "J_WEx6.11.RData" = read_jw_6_11(),
     "J_WEx5.9.Rdata" = read_jw_5_9(),
+    "T7-1.DAT" = read_jw_7_1(),
     .read_file_ext(filename)
   )
 }
@@ -45,4 +46,14 @@ read_jw_5_9 <- function() {
     tibble::as_tibble()
   colnames(tbl_init) <- paste0("V", seq_len(ncol(tbl_init)))
   tbl_init
+}
+
+read_jw_7_1 <- function() {
+  data_raw_jw_7_1 <- projr::projr_path_get("data-raw", "T7-1.DAT") |>
+    read.table()
+  data_tidy_jw_7_1 <- data_raw_jw_7_1
+  colnames(data_tidy_jw_7_1) <- c("size", "assessed_value", "selling_price")
+  data_tidy_jw_7_1 |>
+    janitor::clean_names() |>
+    tibble::as_tibble()
 }

@@ -41,6 +41,13 @@ tibble_vec_null_ind <- sapply(list_of_tibbles, is.null) |> which()
 files_to_read[tibble_vec_null_ind]
 ```
 
+## House price data
+
+```{r}
+data_tidy_house_price <- list_of_tibbles[["T7-1.DAT"]]
+projr::projr_use_data(data_tidy_house_price, overwrite = TRUE)
+```
+
 ## Turtle
 
 ```{r}
