@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.7.0): Miguel Julio Rodo (12:20:36)
+  - Add air pollution data
+
 - *Minor* (v0.6.0): Miguel Julio Rodo (15:01:06)
   - Add paper data
 
