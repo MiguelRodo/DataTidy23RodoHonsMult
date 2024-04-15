@@ -77,3 +77,12 @@ data_tidy_mali <- data_raw_mali |>
   janitor::clean_names()
 projr::projr_use_data(data_tidy_mali, overwrite = TRUE)
 ```
+
+## Air pollution
+
+```{r}
+data_raw_air <- list_of_tibbles[["Air Pollution Data.csv"]]
+data_tidy_air <- data_raw_air |>
+  janitor::clean_names()
+projr::projr_use_data(data_tidy_air, overwrite = TRUE)
+```
