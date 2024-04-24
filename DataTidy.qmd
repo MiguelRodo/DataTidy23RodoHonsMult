@@ -86,3 +86,57 @@ data_tidy_air <- data_raw_air |>
   janitor::clean_names()
 projr::projr_use_data(data_tidy_air, overwrite = TRUE)
 ```
+
+## Profitability measures
+
+```{r}
+#| results: asis
+#| echo: false
+var_vec <- c(
+  "Historical return on assets (HRA)",
+  "Historical return on equity (HRE)",
+  "Historical return on sales (HRS)",
+  "Replacement return on assets (RA)",
+  "Replacement return on equity (RRE)",
+  "Replacement return on sales (RRS)",
+  "Market Q ratio (Q)",
+  "Market relative excess value (REV)"
+)
+hra_vec <- c(1, 0.738, 0.731, 0.828, 0.681, 0.712, 0.625, 0.604)
+hre_vec <- c(NA_real_, 1, 0.52, 0.688, 0.831, 0.543, 0.322, 0.303)
+hrs_vec <- c(NA_real_, NA_real_, 1, 0.652, 0.5113, 0.826, 0.579, 0.617)
+rra_vec <- c(NA_real_, NA_real_, NA_real_, 1, 0.887, 0.867, 0.639, 0.563)
+rre_vec <- c(NA_real_, NA_real_, NA_real_, NA_real_, 1, 0.692, 0.419, 0.352)
+rrs_vec <- c(NA_real_, NA_real_, NA_real_, NA_real_, NA_real_, 1, 0.608, 0.610)
+q_vec <- c(NA_real_, NA_real_, NA_real_, NA_real_, NA_real_, NA_real_, 1, 0.937)
+rev_vec <- c(NA_real_, NA_real_, NA_real_, NA_real_, NA_real_, NA_real_, NA_real_, 1)
+corr_tbl <- tibble::tibble(
+  Variable = var_vec,
+  HRA = hra_vec,
+  HRE = hre_vec,
+  HRS = hrs_vec,
+  RRA = rra_vec,
+  RRE = rre_vec,
+  RRS = rrs_vec,
+  Q = q_vec,
+  REV = rev_vec
+)
+corr_mat <- matrix(c(
+  HRA = hra_vec,
+  HRE = hre_vec,
+  HRS = hrs_vec,
+  RRA = rra_vec,
+  RRE = rre_vec,
+  RRS = rrs_vec,
+  Q = q_vec,
+  REV = rev_vec
+), nrow = 8, byrow = FALSE)
+for (i in seq_len(nrow(corr_mat))) {
+  for (j in seq_len(nrow(corr_mat))) {
+    if (is.na(corr_mat[i, j])) corr_mat[i, j] <- corr_mat[j, i]
+  }
+}
+corr_mat_profit <- corr_mat
+projr::projr_use_data(corr_mat_profit, overwrite = TRUE)
+```
+
