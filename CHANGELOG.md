@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.8.0): Miguel Julio Rodo (08:15:28)
+  - Add profit correlation matrix
+
 - *Minor* (v0.7.0): Miguel Julio Rodo (12:20:36)
   - Add air pollution data
 
