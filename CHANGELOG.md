@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.9.0): Miguel Julio Rodo (13:40:31)
+  - Add chicken bone data
+
 - *Minor* (v0.8.0): Miguel Julio Rodo (08:15:28)
   - Add profit correlation matrix
 
