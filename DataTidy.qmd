@@ -140,3 +140,20 @@ corr_mat_profit <- corr_mat
 projr::projr_use_data(corr_mat_profit, overwrite = TRUE)
 ```
 
+## Chicken bone
+
+```{r}
+data_raw_chicken_bone <- readr::read_table(
+  projr::projr_path_get(
+    "data-raw", "chickenbone.txt"
+  ),
+  col_names = FALSE
+)
+data_tidy_chicken_bone <- data_raw_chicken_bone |>
+  dplyr::select(X2:X5)
+colnames(data_tidy_chicken_bone) <-
+  c(
+    "skull_length", "skull_breadth", "femur_length", "tibia_length"
+  )
+projr::projr_use_data(data_tidy_chicken_bone, overwrite = TRUE)
+```
