@@ -7,13 +7,13 @@
   "codeRepository": "https://github.com/MiguelRodo/DataTidy23RodoHonsMult/",
   "issueTracker": "https://github.com/MiguelRodo/DataTidy23RodoHonsMult/issues",
   "license": "{{ License }}",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.4.1 (2024-06-14)",
+  "runtimePlatform": "R version 4.4.2 (2024-10-31)",
   "author": [
     {
       "@type": "Person",
@@ -33,7 +33,7 @@
   "softwareRequirements": {
     "SystemRequirements": null
   },
-  "fileSize": "1282.041KB",
+  "fileSize": "1282.187KB",
   "citation": [
     {
       "@type": "CreativeWork",
@@ -41,7 +41,8 @@
         {
           "@type": "Person",
           "givenName": "Miguel",
-          "familyName": "Rodo"
+          "familyName": "Rodo",
+          "email": "miguel.rodo@uct.ac.za"
         }
       ],
       "name": "DataTidy23RodoHonsMult: Tidy data for demonstration and assessment for UCT statistics honours multivariate course",

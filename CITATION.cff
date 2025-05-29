@@ -8,7 +8,7 @@ message: 'To cite package "DataTidy23RodoHonsMult" in publications use:'
 type: software
 title: 'DataTidy23RodoHonsMult: Tidy data for demonstration and assessment for UCT
   statistics honours multivariate course'
-version: 0.11.0
+version: 0.11.1
 abstract: Tidy data for demonstration and assessment for UCT statistics honours multivariate
   course
 authors:
@@ -26,7 +26,7 @@ preferred-citation:
   url: https://github.com/MiguelRodo/DataTidy23RodoHonsMult/#readme
   abstract: Tidy data for demonstration and assessment for UCT statistics honours
     multivariate course
-  version: 0.0.0-1
+  version: 0.11.0
 repository-code: https://github.com/MiguelRodo/DataTidy23RodoHonsMult
 url: https://github.com/MiguelRodo/DataTidy23RodoHonsMult/#readme
 contact:

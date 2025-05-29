@@ -8,4 +8,4 @@ bibentry(bibtype = "Misc",
                          email = "miguel.rodo@uct.ac.za"),
          url = "https://github.com/MiguelRodo/DataTidy23RodoHonsMult/#readme",
          abstract = "Tidy data for demonstration and assessment for UCT statistics honours multivariate course",
-         version = "0.11.0")
+         version = "0.11.1")

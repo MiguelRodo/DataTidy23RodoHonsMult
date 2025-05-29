@@ -1,5 +1,7 @@
 # CHANGELOG
 
+- Patch (v0.11.1): Miguel Julio Rodo (2025-05-29 14:34:43)
+  - Add NAMESPACE file
 - *Minor* (v0.11.0): Miguel Rodo (2025-05-29 10:07:20)
   - Update for 2025
 
