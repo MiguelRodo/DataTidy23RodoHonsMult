@@ -21,6 +21,7 @@
 ^_dependencies\.R$
 ^CHANGELOG\.md$
 ^codemeta\.json$
+^DataTidy\.rmarkdown$
 ^manifest\.csv$
 ^DataTidy_files/
 ^DataTidy_files$
