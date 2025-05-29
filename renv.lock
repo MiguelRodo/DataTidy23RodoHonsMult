@@ -1,7 +1,11 @@
 {
   "R": {
-    "Version": "4.4.1",
+    "Version": "4.4.2",
     "Repositories": [
+      {
+        "Name": "BioCcontainers",
+        "URL": "https://bioconductor.org/packages/3.20/container-binaries/bioconductor_docker"
+      },
       {
         "Name": "BioCsoft",
         "URL": "https://bioconductor.org/packages/3.20/bioc"
