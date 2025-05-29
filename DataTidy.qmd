@@ -59,7 +59,7 @@ projr::projr_use_data(data_tidy_paper, overwrite = TRUE)
 
 ```{r}
 data_raw_turtle <- readr::read_csv(
-  projr::projr_path_get("data-raw", "turtle.csv")
+  projr::projr_path_get("raw-data", "turtle.csv")
 )
 data_tidy_turtle <- data_raw_turtle |>
   janitor::clean_names() |>
@@ -71,7 +71,7 @@ projr::projr_use_data(data_tidy_turtle, overwrite = TRUE)
 
 ```{r}
 data_raw_mali <- readr::read_csv(
-  projr::projr_path_get("data-raw", "MaliFamilyFarmData.csv")
+  projr::projr_path_get("raw-data", "MaliFamilyFarmData.csv")
 )
 data_tidy_mali <- data_raw_mali |>
   janitor::clean_names()
@@ -145,7 +145,7 @@ projr::projr_use_data(corr_mat_profit, overwrite = TRUE)
 ```{r}
 data_raw_chicken_bone <- readr::read_table(
   projr::projr_path_get(
-    "data-raw", "chickenbone.txt"
+    "raw-data", "chickenbone.txt"
   ),
   col_names = FALSE
 )

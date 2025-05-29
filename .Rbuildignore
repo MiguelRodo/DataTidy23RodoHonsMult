@@ -7,13 +7,24 @@
 
 ^CITATION\.cff$
 # Start of projr section: do not edit by hand (until `# End of projr section`)
-^_data_raw/
-^_data_raw$
+^_raw_data/
+^_raw_data$
 ^_tmp/
 ^_tmp$
 ^_output/
 ^_output$
 ^docs/
 ^docs$
+^_projr\.yml$
+^DataTidy\.qmd$
+^README\.Rmd$
+^_dependencies\.R$
+^CHANGELOG\.md$
+^codemeta\.json$
+^manifest\.csv$
+^DataTidy_files/
+^DataTidy_files$
+^DataTidy\.html/
+^DataTidy\.html$
 # End of projr section
 

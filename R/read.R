@@ -13,18 +13,18 @@ read_file <- function(filename) {
   file_extension <- tools::file_ext(filename) |> tolower()
 
   if (file_extension == "csv") {
-    return(as_tibble(read_csv(file.path("_data_raw", filename))))
+    return(as_tibble(read_csv(file.path("_raw_data", filename))))
   } else if (file_extension == "txt" || file_extension == "dat") {
-    return(as_tibble(read_delim(file.path("_data_raw", filename), delim = "\t")))
+    return(as_tibble(read_delim(file.path("_raw_data", filename), delim = "\t")))
   } else if (file_extension == "RData") {
-    load(file.path("_data_raw", filename))
+    load(file.path("_raw_data", filename))
     return(get(ls()[1]))
   }
 }
 
 
 read_jw_6_11 <- function() {
-  path_to_file <- projr::projr_path_get("data-raw", "J_WEx6.11.RData")
+  path_to_file <- projr::projr_path_get("raw-data", "J_WEx6.11.RData")
   env_tmp <- new.env()
   load(path_to_file, envir = env_tmp)
   tbl_init <- lapply(
@@ -37,7 +37,7 @@ read_jw_6_11 <- function() {
 }
 
 read_jw_5_9 <- function() {
-  path_to_file <- projr::projr_path_get("data-raw", "J_WEx5.9.Rdata")
+  path_to_file <- projr::projr_path_get("raw-data", "J_WEx5.9.Rdata")
   env_tmp <- new.env()
   load(path_to_file, envir = env_tmp)
   tbl_init <- lapply(
@@ -50,7 +50,7 @@ read_jw_5_9 <- function() {
 }
 
 read_jw_7_1 <- function() {
-  data_raw_jw_7_1 <- projr::projr_path_get("data-raw", "T7-1.DAT") |>
+  data_raw_jw_7_1 <- projr::projr_path_get("raw-data", "T7-1.DAT") |>
     read.table()
   data_tidy_jw_7_1 <- data_raw_jw_7_1
   colnames(data_tidy_jw_7_1) <- c("size", "assessed_value", "selling_price")
@@ -60,7 +60,7 @@ read_jw_7_1 <- function() {
 }
 
 read_jw_7_7 <- function() {
-  data_raw_jw_7_7 <- projr::projr_path_get("data-raw", "T7-7.dat") |>
+  data_raw_jw_7_7 <- projr::projr_path_get("raw-data", "T7-7.dat") |>
     read.table()
   data_tidy_jw_7_7 <- data_raw_jw_7_7
   colnames(data_tidy_jw_7_7) <- c(
