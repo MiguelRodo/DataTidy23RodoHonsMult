@@ -4,7 +4,8 @@ bibentry(bibtype = "Misc",
          key = "rodo",
          title = "DataTidy23RodoHonsMult: Tidy data for demonstration and assessment for UCT statistics honours multivariate course",
          author = person(given = "Miguel",
-                         family = "Rodo"),
+                         family = "Rodo",
+                         email = "miguel.rodo@uct.ac.za"),
          url = "https://github.com/MiguelRodo/DataTidy23RodoHonsMult/#readme",
          abstract = "Tidy data for demonstration and assessment for UCT statistics honours multivariate course",
-         version = "0.0.0-1")
+         version = "0.11.0")

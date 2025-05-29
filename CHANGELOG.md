@@ -1,5 +1,8 @@
 # CHANGELOG
 
+- *Minor* (v0.11.0): Miguel Rodo (2025-05-29 10:07:20)
+  - Update for 2025
+
 - *Minor* (v0.9.0): Miguel Julio Rodo (13:40:31)
   - Add chicken bone data
 
