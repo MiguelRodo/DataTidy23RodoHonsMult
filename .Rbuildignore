@@ -19,9 +19,9 @@
 ^DataTidy\.qmd$
 ^README\.Rmd$
 ^_dependencies\.R$
+^BUILDLOG\.md$
 ^CHANGELOG\.md$
 ^codemeta\.json$
-^DataTidy\.rmarkdown$
 ^manifest\.csv$
 ^DataTidy_files/
 ^DataTidy_files$

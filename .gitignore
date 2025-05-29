@@ -11,7 +11,7 @@ _raw_data/**
 _tmp/**
 _output/**
 docs/**
-DataTidy.rmarkdown
+BUILDLOG.md
 DataTidy_files/**
 DataTidy.html/**
 # End of projr section
